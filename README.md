@@ -39,10 +39,28 @@ rpm -ivh --nodeps *rpm
 rm -rf *rpm
 ```
 
-* Meteo - advanced weather
+* Meteo - advanced weather app
 
 ```
 dnf download meteo
+rpm -ivh --nodeps *rpm
+rm -rf *rpm
+```
+
+* Vocal - podcast streaming
+
+```
+dnf download vocal granite
+rpm -ivh --nodeps *rpm
+rm -rf *rpm
+```
+
+* PasswordSafe - passwords manager for GNOME
+
+```
+dnf download passwordsafe pykeepass-python3 construct-python3 pycryptodome-python3 lxml-python3 \
+libpwquality-python3 argon2_cffi-python3 python-dateutil-python3 python-future-python3
+
 rpm -ivh --nodeps *rpm
 rm -rf *rpm
 ```
