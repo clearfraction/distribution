@@ -5,7 +5,7 @@
 
 ### How to enable this repository:
 
-* Istall `dnf` package manager: `swupd bundle-add package-utils`
+* Install `dnf` package manager: `swupd bundle-add package-utils`
 * Enable RPM repository:
 `dnf config-manager --add-repo https://gitlab.com/clearfraction/repository/raw/repos/`
 `dnf config-manager --add-repo https://download.clearlinux.org/current/x86_64/os/`
@@ -64,3 +64,8 @@ libpwquality-python3 argon2_cffi-python3 python-dateutil-python3 python-future-p
 rpm -ivh --nodeps *rpm
 rm -rf *rpm
 ```
+
+### Package updating & delete
+
+* Updating: `dnf download pkg1 pkg2 && rpm -U --nodeps *rpm`
+* Delete: `dnf remove pkg1 pkg2`
