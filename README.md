@@ -1,3 +1,5 @@
+[![Slack](https://img.shields.io/badge/Community-Slack-orange.svg)](https://join.slack.com/t/linuxgangclub/shared_invite/enQtODYyNDMzNTIzMzYzLWJjYWYxNjBiNGZmYzc1MWIyYmIxZGQxNzRkOGUzNTdkY2NmZTJmOGQ3OWI0YTkzMDU2NGNlMGRmNTA2YWNjMzk)
+
 # Clear Fraction - unofficial repository for [Clear Linux](https://clearlinux.org/)
 ## FFmpeg, Mpv, Gstreamer and more multimedia applications makes Clear Linux great again! Full x264, x265(HEVC), AAC, MP3 support.
 
@@ -10,7 +12,10 @@
 `dnf config-manager --add-repo https://gitlab.com/clearfraction/repository/raw/repos/`
 `dnf config-manager --add-repo https://download.clearlinux.org/current/x86_64/os/`
 
+### Package updating & delete
 
+* Updating: `dnf download pkg1 pkg2 && rpm -U --nodeps *rpm`
+* Delete: `dnf remove pkg1 pkg2`
 
 ### Available applications
 
@@ -65,7 +70,4 @@ rpm -ivh --nodeps *rpm
 rm -rf *rpm
 ```
 
-### Package updating & delete
 
-* Updating: `dnf download pkg1 pkg2 && rpm -U --nodeps *rpm`
-* Delete: `dnf remove pkg1 pkg2`
