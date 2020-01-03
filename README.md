@@ -1,7 +1,7 @@
 # Clear Fraction - unofficial repository for [Clear Linux](https://clearlinux.org/)
-## FFmpeg, Mpv, Gstreamer and more multimedia applications
+## FFmpeg, Mpv, Gstreamer and more multimedia applications makes Clear Linux great again! Full x264, x265(HEVC), AAC, MP3 support.
 
-
+## [TODO](https://github.com/clearfraction/distribution/projects/1)
 
 ### How to enable this repository:
 
