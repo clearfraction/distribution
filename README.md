@@ -23,7 +23,8 @@
 
 ```
 cd /tmp/
-dnf download ffmpeg fdk-aac-free ffmpeg-libs gsm-lib libmp3lame0 x264 x264-libs x265-libs snappy-lib LuaJIT-lib gstreamer1-libav
+dnf download ffmpeg fdk-aac-free ffmpeg-libs gsm-lib libmp3lame0 x264 x264-libs x265-libs \
+snappy-lib LuaJIT-lib gstreamer1-libav jack2-lib
 rpm -ivh --nodeps *rpm
 rm -rf *rpm
 ```
