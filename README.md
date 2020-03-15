@@ -5,7 +5,17 @@
 
 ## [TODO](https://github.com/clearfraction/distribution/projects/1)
 
-### How to enable this repository:
+### Experimental: bundles
+
+* `swupd 3rd-party add -n cf https://gitlab.com/clearfraction/bundles/-/raw/master/update`
+* `mkdir -p /opt/3rd-party/bundles/clearfraction2/usr/share/clear/update-ca/`
+* `curl -L https://gitlab.com/clearfraction/bundles/-/raw/master/Swupd_Root.pem -o /opt/3rd-party/bundles/cf/usr/share/clear/update-ca/Swupd_Root.pem`
+
+Now you can install bundles like `swupd bundle-add codecs`. Check all available bundles [here](https://github.com/clearfraction/bundles/tree/master/configs). 
+
+
+
+### How to enable RPM repository:
 
 * Install `dnf` package manager: `swupd bundle-add package-utils`
 * Enable RPM repository:
