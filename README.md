@@ -17,13 +17,18 @@ Now you can install bundles like `swupd bundle-add codecs`. Check all available 
 
 * Install `dnf` package manager: `swupd bundle-add package-utils`
 * Enable RPM repository:
-`dnf config-manager --add-repo https://gitlab.com/clearfraction/repository/raw/repos/`
-`dnf config-manager --add-repo https://download.clearlinux.org/current/x86_64/os/`
+
+  `dnf config-manager --add-repo https://gitlab.com/clearfraction/repository/raw/repos/`
+  
+  `dnf config-manager --add-repo https://download.clearlinux.org/current/x86_64/os/`
+
 
 ### Package updating & delete
 
 * Updating: `dnf download pkg1 pkg2 && rpm -U --nodeps *rpm`
 * Delete: `dnf remove pkg1 pkg2`
+
+If any file conflicts or another errors then use `--replacepkgs` flag: `rpm -U --nodeps --replacepkgs *rpm`
 
 ### Available applications
 
