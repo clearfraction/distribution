@@ -7,9 +7,7 @@
 
 ### Experimental: bundles
 
-* `swupd 3rd-party add -n cf https://gitlab.com/clearfraction/bundles/-/raw/master/update`
-* `mkdir -p /opt/3rd-party/bundles/clearfraction2/usr/share/clear/update-ca/`
-* `curl -L https://gitlab.com/clearfraction/bundles/-/raw/master/Swupd_Root.pem -o /opt/3rd-party/bundles/cf/usr/share/clear/update-ca/Swupd_Root.pem`
+* `swupd 3rd-party add clearfraction https://gitlab.com/clearfraction/bundles/-/raw/master/update`
 
 Now you can install bundles like `swupd bundle-add codecs`. Check all available bundles [here](https://github.com/clearfraction/bundles/tree/master/configs). 
 
