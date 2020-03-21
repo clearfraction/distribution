@@ -84,4 +84,10 @@ rpm -ivh --nodeps *rpm
 rm -rf *rpm
 ```
 
+* Shotwell - image viewer
 
+```
+dnf download shotwell libchamplain-lib
+rpm -ivh --nodeps *rpm
+rm -rf *rpm
+```
