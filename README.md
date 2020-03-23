@@ -9,7 +9,7 @@
 
 * `swupd 3rd-party add clearfraction https://gitlab.com/clearfraction/bundles/-/raw/master/update`
 
-Now you can install bundles like `swupd bundle-add codecs`. Check all available bundles [here](https://github.com/clearfraction/bundles/tree/master/configs). 
+Now you can install bundles like `swupd 3rd-party bundle-add codecs`. Check all available bundles [here](https://github.com/clearfraction/bundles/tree/master/configs). 
 
 
 
