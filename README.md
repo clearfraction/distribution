@@ -18,5 +18,7 @@
 Now you can install bundles like `swupd 3rd-party bundle-add codecs`. Check all available bundles [here](https://github.com/clearfraction/bundles/tree/master/configs). 
 Copying icons is neccessary 'cause this [bug](https://github.com/clearlinux/swupd-client/issues/1420).
 
+### How to repair
 
+* `sudo swupd 3rd-party repair`
 
