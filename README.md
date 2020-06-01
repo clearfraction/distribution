@@ -1,7 +1,7 @@
 [![Slack](https://img.shields.io/badge/Community-Slack-orange.svg)](https://join.slack.com/t/linuxgangclub/shared_invite/enQtODYyNDMzNTIzMzYzLWJjYWYxNjBiNGZmYzc1MWIyYmIxZGQxNzRkOGUzNTdkY2NmZTJmOGQ3OWI0YTkzMDU2NGNlMGRmNTA2YWNjMzk)
 
 # Clear Fraction - unofficial repository for [Clear Linux](https://clearlinux.org/)
-## FFmpeg, Mpv, Gstreamer and more multimedia applications
+## FFmpeg, Mpv, Gstreamer, Brave, VSCodium and more applications
 ## x264, x265(HEVC) and AV1 support
 
 
@@ -9,11 +9,22 @@
 
 ### How to enable the repository
 
-* `swupd 3rd-party add clearfraction https://gitlab.com/clearfraction/bundles/-/raw/master/update`
+* `swupd 3rd-party add clearfraction https://clearfraction.gitlab.io/updates`
 
 * `cp -r /opt/3rd-party/bundles/clearfraction/usr/share/applications/* ~/.local/share/applications/`
 
 * `glib-compile-schemas /opt/3rd-party/bundles/clearfraction/usr/share/glib-2.0/schemas/` if gsettings schema error
+
+### Install software
+
+`swupd 3rd-party bundle-list -a` will show all availanle bundles
+`swupd 3rd-party install codecs` will install ffmpeg & gstreamer-libav
+
+### Get updates
+
+`swupd 3rd-party update`
+
+
 
 #### Environment variables
 
@@ -33,7 +44,6 @@ Very helpful for better system integration, for example any application can use 
 
 `echo 'LD_LIBRARY_PATH=/opt/3rd-party/bundles/clearfraction/usr/lib64:/opt/3rd-party/bundles/clearfraction/usr/local/lib64:$LD_LIBRARY_PATH'  >> ~/.config/environment.d/envvars.conf`
 
-Now you can install bundles like `swupd 3rd-party bundle-add codecs`. Check all available bundles [here](https://github.com/clearfraction/bundles/tree/master/configs). 
 Copying icons is neccessary 'cause this [bug](https://github.com/clearlinux/swupd-client/issues/1420).
 
 ### How to repair
