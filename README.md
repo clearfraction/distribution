@@ -11,9 +11,13 @@
 
 * `swupd 3rd-party add clearfraction https://clearfraction.gitlab.io/updates`
 
-* `cp -r /opt/3rd-party/bundles/clearfraction/usr/share/applications/* ~/.local/share/applications/`
+Optional steps:
+
+* `cp -r /opt/3rd-party/bundles/clearfraction/usr/share/applications/* ~/.local/share/applications/` if you don't see launchers of installed applications (not needed for `codecs` bundle)
 
 * `glib-compile-schemas /opt/3rd-party/bundles/clearfraction/usr/share/glib-2.0/schemas/` if gsettings schema error
+
+* `rm -rvf ~/.cache/gstreamer-1.0/` fix for troubles with gstreamer audio playback
 
 ### Install software
 
