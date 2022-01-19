@@ -31,7 +31,7 @@ Optional steps:
 
 - `sudo swupd 3rd-party bundle-list -a` - show available bundles
 
-- `sudo swupd 3rd-party install codecs` - install ffmpeg & gstreamer-libav with dependencies
+- `sudo swupd 3rd-party bundle-add codecs` - install ffmpeg & gstreamer-libav with dependencies
 
 ### Updates
 
