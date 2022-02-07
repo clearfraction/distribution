@@ -35,6 +35,13 @@ GST_PLUGIN_PATH_1_0=/opt/3rd-party/bundles/clearfraction/usr/lib64/gstreamer-1.0
 EOF
 ```
 
+GNOME/GDM fix:
+```
+sudo tee -a /usr/share/gdm/env.d/flatpak.env << EOF
+XDG_DATA_DIRS=/opt/3rd-party/bundles/clearfraction/usr/share/:/opt/3rd-party/bundles/clearfraction/usr/local/share/:${XDG_DATA_DIRS:-/usr/local/share/:/usr/share/}
+EOF
+```
+
 Environment tuning needed for better system integration. Related: [swupd-client#1420](https://github.com/clearlinux/swupd-client/issues/1420), [swupd-client#1464](https://github.com/clearlinux/swupd-client/issues/1464), [swupd-client#1463](https://github.com/clearlinux/swupd-client/issues/1463), [swupd-client#1428](https://github.com/clearlinux/swupd-client/issues/1428), [swupd-client#1421](https://github.com/clearlinux/swupd-client/issues/1421).
 
 Optional steps:
