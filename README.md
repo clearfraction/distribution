@@ -77,6 +77,10 @@ echo "export LD_LIBRARY_PATH=/opt/3rd-party/bundles/clearfraction/usr/lib64" >> 
 
 - BTC: bc1qpzse7xm76cx34dn5vc52ng5s68v2glp7ce55as
 
+Patrons: 
+
+- Air Dedman - CF Worshipper
+
 Special thanks to:
 
 - @kuboosoft & @lebensterben for tech consulting
