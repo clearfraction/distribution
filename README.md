@@ -77,6 +77,8 @@ echo "export LD_LIBRARY_PATH=/opt/3rd-party/bundles/clearfraction/usr/lib64" >> 
 
 - BTC: bc1qpzse7xm76cx34dn5vc52ng5s68v2glp7ce55as
 
+- [PayPal](https://www.paypal.com/donate/?hosted_button_id=L7ML8QJSLBTUE)
+
 Patrons: 
 
 - Air Dedman - CF Worshipper
