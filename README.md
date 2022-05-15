@@ -35,6 +35,12 @@ GST_PLUGIN_PATH_1_0=/opt/3rd-party/bundles/clearfraction/usr/lib64/gstreamer-1.0
 EOF
 ```
 
+Python apps fix:
+```
+# non-root user
+echo "export PYTHONPATH=/opt/3rd-party/bundles/clearfraction\`echo /usr/lib/python*\`/site-packages:$PYTHONPATH" > ~/.bashrc
+```
+
 GNOME/GDM fix:
 ```
 sudo tee -a /usr/share/gdm/env.d/flatpak.env << EOF
