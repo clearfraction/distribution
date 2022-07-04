@@ -52,7 +52,7 @@ Temporary fix - use the swupd `-n` flag.
 Python apps fix:
 ```
 # non-root user
-echo "export PYTHONPATH=/opt/3rd-party/bundles/clearfraction\`echo /usr/lib/python*\`/site-packages:$PYTHONPATH" > ~/.bashrc
+echo "export PYTHONPATH=/opt/3rd-party/bundles/clearfraction\`echo /usr/lib/python*\`/site-packages:$PYTHONPATH" >> ~/.bashrc
 ```
 
 Environment tuning needed for better system integration. Related: [swupd-client#1420](https://github.com/clearlinux/swupd-client/issues/1420), [swupd-client#1464](https://github.com/clearlinux/swupd-client/issues/1464), [swupd-client#1463](https://github.com/clearlinux/swupd-client/issues/1463), [swupd-client#1428](https://github.com/clearlinux/swupd-client/issues/1428), [swupd-client#1421](https://github.com/clearlinux/swupd-client/issues/1421).
