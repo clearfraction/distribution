@@ -35,19 +35,6 @@ GST_PLUGIN_PATH_1_0=/opt/3rd-party/bundles/clearfraction/usr/lib64/gstreamer-1.0
 EOF
 ```
 
-GNOME/GDM fix for hidden desktop entries:
-```
-sudo tee -a /usr/share/gdm/env.d/flatpak.env << EOF
-XDG_DATA_DIRS=/opt/3rd-party/bundles/clearfraction/usr/share/:/opt/3rd-party/bundles/clearfraction/usr/local/share/:${XDG_DATA_DIRS:-/usr/local/share/:/usr/share/}
-EOF
-```
-
-Expired certificate error
-
-Extract the latest certificate `Swupd_Root.pem` from [mixer-*tar](https://github.com/clearfraction/bundles/releases/latest) to `/opt/3rd-party/bundles/clearfraction/usr/share/clear/update-ca/Swupd_Root.pem`
-Temporary fix - use the swupd `-n` flag.
-
-
 
 Python apps fix:
 ```
