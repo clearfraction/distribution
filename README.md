@@ -64,7 +64,7 @@ The `brave` bundle requires a one-time action before installation. Without the s
 
 - `sudo ln -sf /opt/3rd-party/bundles/clearfraction/opt/brave.com /opt/brave.com`
 
-- `sudo swupd 3rd-party bundle-add brave
+- `sudo swupd 3rd-party bundle-add brave`
 
 ### <a id="updates"></a>How to get updates
 
