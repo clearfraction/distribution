@@ -60,11 +60,6 @@ The repository provides separate `codecs` and `codecs-cuda` bundles. Preferably,
 
 - `sudo swupd 3rd-party bundle-add codecs-cuda` - install ffmpeg & gstreamer-libav with dependencies, supporting AMD (vaapi, vdpau), Intel (qsv, vaapi), and NVIDIA (nvdec, vaapi, vdpau), also includes the (nvdec, vdpau) backend vaapi drivers
 
-The `brave` bundle requires a one-time action before installation. Without the symbolic link, the `swupd` command will fail to add `brave-browser-stable` to the `/opt/3rd-party/bin` location.
-
-- `sudo ln -sf /opt/3rd-party/bundles/clearfraction/opt/brave.com /opt/brave.com`
-
-- `sudo swupd 3rd-party bundle-add brave`
 
 ### <a id="updates"></a>How to get updates
 
