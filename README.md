@@ -36,7 +36,7 @@ EOF
 
 sudo tee -a /etc/profile.d/10-cf.sh << 'EOF'
 while read -r l; do
-	    eval export $l
+            eval export "$(echo -n "$l" | awk -v RS=: '!($0 in a) {a[$0]; printf("%s%s", c, $0); c=":"; }')"
 done < <(/usr/lib/systemd/user-environment-generators/30-systemd-environment-d-generator)
 EOF
 ```
