@@ -35,9 +35,16 @@ GST_PLUGIN_PATH_1_0=/opt/3rd-party/bundles/clearfraction/usr/lib64/gstreamer-1.0
 EOF
 
 sudo tee -a /etc/profile.d/10-cf.sh << 'EOF'
-while read -r l; do
-            eval export "$(echo -n "$l" | awk -v RS=: '!($0 in a) {a[$0]; printf("%s%s", c, $0); c=":"; }')"
-done < <(/usr/lib/systemd/user-environment-generators/30-systemd-environment-d-generator)
+eval $(
+  /usr/lib/systemd/user-environment-generators/30-systemd-environment-d-generator |\
+  awk -v FS=: '{
+      delete a; split($1,v,"="); a[v[2]]
+      printf("export %s=%s", v[1], v[2])
+      for (i = 2; i <= NF; i++)
+          if (!($i in a)) printf(":%s", $i); a[$i]
+      printf("\n")
+  }'
+)
 EOF
 ```
 
