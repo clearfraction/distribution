@@ -23,7 +23,7 @@
 ### <a id="how-to-enable-the-repository"></a>How to enable the repository
 
 ```bash
-sudo swupd 3rd-party add clearfraction https://clearfraction.herokuapp.com/update
+sudo swupd 3rd-party add clearfraction https://download.clearfraction.cf/update
 sudo mkdir -p /etc/environment.d /etc/profile.d
 sudo tee -a /etc/environment.d/10-cf.conf << 'EOF'
 PATH=$PATH:/opt/3rd-party/bundles/clearfraction/bin:/opt/3rd-party/bundles/clearfraction/usr/bin:/opt/3rd-party/bundles/clearfraction/usr/local/bin
