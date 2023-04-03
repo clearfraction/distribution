@@ -95,6 +95,16 @@ The repository provides separate `codecs` and `codecs-cuda` bundles. Preferably,
 ```
 echo "export LD_LIBRARY_PATH=/opt/3rd-party/bundles/clearfraction/usr/lib64" >> "${HOME}/.config/firefox.conf"
 ```
+Apply the following Firefox settings via `about:config`:
+
+- `media.ffmpeg.vaapi.enabled` to `true`
+- `media.ffvpx.enabled` and `media.av1.enabled` to `false` - useful for Youtube if your hardware doesn't supports VP9 or AV1 acceleration
+
+For NVidia graphics recommend to try the [config](https://github.com/marioroy/nvidia-driver-on-clear-linux/blob/main/HWAccel/firefox/firefox.conf) written by @marioroy:
+
+```
+curl -L https://github.com/marioroy/nvidia-driver-on-clear-linux/raw/main/HWAccel/firefox/firefox.conf -o "${HOME}/.config/firefox.conf"
+```
 
 ### <a id="donate"></a>Donate
 
