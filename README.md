@@ -106,6 +106,8 @@ For NVidia graphics recommend to try the [config](https://github.com/marioroy/nv
 curl -L https://github.com/marioroy/nvidia-driver-on-clear-linux/raw/main/HWAccel/firefox/firefox.conf -o "${HOME}/.config/firefox.conf"
 ```
 
+For NVidia hardware acceleration set the `widget.dmabuf.force-enabled` to `true` in `about:config`.
+
 ### <a id="donate"></a>Donate
 
 - [Patreon](https://www.patreon.com/clearfraction)
