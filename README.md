@@ -88,7 +88,7 @@ The repository provides separate `codecs` and `codecs-cuda` bundles. Preferably,
 ### <a id="repair"></a>How to repair
 
 - `sudo swupd 3rd-party repair`
-- `sudo swupd 3rd-party remove clearfraction && sudo swupd 3rd-party add clearfraction https://clearfraction.herokuapp.com/update`
+- `sudo swupd 3rd-party remove clearfraction && sudo swupd 3rd-party add clearfraction https://download.clearfraction.cf/update`
 
 ### <a id="firefox"></a>Video playback in Firefox
 
