@@ -18,6 +18,8 @@
 
 - [Video playback in Firefox](#firefox)
 
+- [Documentation](#docs) 
+
 - [Donate](#donate)
 
 ### <a id="how-to-enable-the-repository"></a>How to enable the repository
@@ -107,6 +109,14 @@ curl -L https://github.com/marioroy/nvidia-driver-on-clear-linux/raw/main/HWAcce
 ```
 
 For NVidia hardware acceleration set the `widget.dmabuf.force-enabled` to `true` in `about:config`.
+
+### <a id="docs"></a>Documentation
+
+- [Docs](https://github.com/clearfraction/docs)
+  - [How it works](https://github.com/clearfraction/docs/blob/main/README.md#how-it-works)
+  - [How to build software using Clear Fraction libraries like x264, x265 or CUDA](https://github.com/clearfraction/docs/blob/main/README.md#how-to-build-software-using-clear-fraction-libraries-like-x264-x265-or-cuda) 
+
+
 
 ### <a id="donate"></a>Donate
 
