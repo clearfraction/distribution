@@ -24,6 +24,8 @@
 
 ### <a id="how-to-enable-the-repository"></a>How to enable the repository
 
+- note: for old CPUs without AVX2 support use the `https://v2download.clearfraction.cf/update`, you can fix it anytime in the swupd config `/opt/3rd-party/repo.ini`.
+
 ```bash
 sudo swupd 3rd-party add clearfraction https://download.clearfraction.cf/update
 sudo mkdir -p /etc/environment.d /etc/profile.d
