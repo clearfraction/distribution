@@ -1,4 +1,12 @@
-# Clear Fraction - third-party repository for [Clear Linux](https://clearlinux.org/) optimized for performance
+<div id="logo" align="center">
+<br />
+<img src="https://clearfraction.cf/media/logo.svg" alt="Clear Fraction logo" width="200" />
+<h1>Clear Fraction</h1>
+<h3>Third-party repository for [Clear Linux](https://clearlinux.org/) optimized for performance</h3>  
+</div>
+
+
+### Features:
 
 - FFmpeg, Mpv, Gstreamer, VSCodium, Brave and [more applications](https://github.com/clearfraction/bundles/tree/master/configs)
 
@@ -12,7 +20,7 @@
 
 - [Install software](#install)
 
-- [How to get updates](#update)
+- [How to get updates](#updates)
 
 - [Repair](#repair)
 
@@ -24,7 +32,8 @@
 
 ### <a id="how-to-enable-the-repository"></a>How to enable the repository
 
-- note: for old CPUs without AVX2 support use the `https://v2download.clearfraction.cf/update`, you can fix it anytime in the swupd config `/opt/3rd-party/repo.ini`.
+- note 1: for old CPUs without AVX2 support use the `https://v2download.clearfraction.cf/update`, you can fix it anytime in the swupd config `/opt/3rd-party/repo.ini`.
+- note 2: do not install `mpv` from Clear repository, strange things will happen. [Enabling](https://wiki.gentoo.org/wiki/Mpv#Broken_hardware_video_decoding.2Fhigh_CPU_usage) hardware acceleration may be a good idea.
 
 ```bash
 sudo swupd 3rd-party add clearfraction https://download.clearfraction.cf/update
@@ -59,12 +68,6 @@ sudo tee -a /etc/profile.d/10-cf.sh << 'EOF'
 EOF
 ```
 
-
-Python apps fix:
-```
-# non-root user
-echo "export PYTHONPATH=/opt/3rd-party/bundles/clearfraction\`echo /usr/lib/python*\`/site-packages:$PYTHONPATH" >> ~/.bashrc
-```
 
 Environment tuning needed for better system integration. Related: [swupd-client#1420](https://github.com/clearlinux/swupd-client/issues/1420), [swupd-client#1464](https://github.com/clearlinux/swupd-client/issues/1464), [swupd-client#1463](https://github.com/clearlinux/swupd-client/issues/1463), [swupd-client#1428](https://github.com/clearlinux/swupd-client/issues/1428), [swupd-client#1421](https://github.com/clearlinux/swupd-client/issues/1421).
 
