@@ -2,7 +2,7 @@
 <br />
 <img src="https://clearfraction.cf/media/logo.svg" alt="Clear Fraction logo" width="200" />
 <h1>Clear Fraction</h1>
-<h3>Third-party repository for [Clear Linux](https://clearlinux.org/) optimized for performance</h3>  
+<h3>Third-party repository for <a href="https://clearlinux.org" alt="Clear Linux">Clear Linux</a> optimized for performance</h3>  
 </div>
 
 
@@ -26,7 +26,9 @@
 
 - [Video playback in Firefox](#firefox)
 
-- [Documentation](#docs) 
+- [Documentation](#docs)
+  - [How it works](https://github.com/clearfraction/docs/blob/main/README.md#how-it-works)
+  - [How to build software using Clear Fraction libraries like x264, x265 or CUDA](https://github.com/clearfraction/docs/blob/main/README.md#how-to-build-software-using-clear-fraction-libraries-like-x264-x265-or-cuda) 
 
 - [Donate](#donate)
 
