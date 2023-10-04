@@ -6,11 +6,26 @@
 </div>
 
 
+<div id="badges" align="center">
+
+[![current release](https://img.shields.io/github/release/clearfraction/bundles.svg)](https://github.com/clearfraction/bundles/releases)
+[![Docker Image Size with architecture (latest by date/latest semver)](https://img.shields.io/docker/image-size/clearfraction/ffmpeg?label=ffmpeg%20docker%20image)](https://hub.docker.com/r/clearfraction/ffmpeg)
+[![Docker Image Size with architecture (latest by date/latest semver)](https://img.shields.io/docker/image-size/clearfraction/ffmpeg?label=ffmpeg-cuda%20docker%20image)](https://hub.docker.com/r/clearfraction/ffmpeg-cuda)
+
+[![build status](https://img.shields.io/github/actions/workflow/status/clearfraction/mass-rebuild/mass-rebuild.yml?branch=main&label=build%28mass-rebuild%29)](https://github.com/clearfraction/bundles/actions/workflows/bundler.yml?query=branch%3Amaster)
+[![build status](https://img.shields.io/github/actions/workflow/status/clearfraction/bundles/bundler.yml?branch=master&label=build%28bundler%29)](https://github.com/clearfraction/bundles/actions/workflows/bundler.yml?query=branch%3Amaster)
+
+
+[![](https://img.shields.io/badge/donate-patreon-red)](https://patreon.com/clearfraction)
+[![](https://img.shields.io/badge/donate-buymeacoffee-yellow)](https://buymeacoffee.com/clearfraction)
+</div>
+
+
 ### Features:
 
 - FFmpeg, Mpv, Gstreamer, VSCodium, Brave and [more applications](https://github.com/clearfraction/bundles/tree/master/configs)
 
-- popular media codecs support including ffmpeg with SVT-AV1 encoder
+- popular media codecs support including ffmpeg with SVT-AV1, x264, x265, AAC and more encoders/decoders
 
 - open source workflow and build logs
 
@@ -129,7 +144,7 @@ For NVidia hardware acceleration set the `widget.dmabuf.force-enabled` to `true`
 
 - [Patreon](https://www.patreon.com/clearfraction)
 
-- BTC: bc1qpzse7xm76cx34dn5vc52ng5s68v2glp7ce55as
+- <a href="https://www.buymeacoffee.com/ClearFraction" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
 - [PayPal](https://www.paypal.com/donate/?hosted_button_id=L7ML8QJSLBTUE)
 
