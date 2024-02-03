@@ -1,6 +1,6 @@
 <div id="logo" align="center">
 <br />
-<img src="https://clearfraction.cf/media/logo.svg" alt="Clear Fraction logo" width="200" />
+<img src="https://clearfraction.github.io/media/logo.svg" alt="Clear Fraction logo" width="200" />
 <h1>Clear Fraction</h1>
 <h3>Third-party repository for <a href="https://clearlinux.org" alt="Clear Linux">Clear Linux</a> optimized for performance</h3>  
 </div>
@@ -49,11 +49,11 @@
 
 ### <a id="how-to-enable-the-repository"></a>How to enable the repository
 
-- note 1: for old CPUs without AVX2 support use the `https://v2download.clearfraction.cf/update`, you can fix it anytime in the swupd config `/opt/3rd-party/repo.ini`.
+- note 1: for old CPUs without AVX2 support use the `https://v2clearfraction.vercel.app/update`, you can fix it anytime in the swupd config `/opt/3rd-party/repo.ini`.
 - note 2: do not install `mpv` from Clear repository, strange things will happen. [Enabling](https://wiki.gentoo.org/wiki/Mpv#Broken_hardware_video_decoding.2Fhigh_CPU_usage) hardware acceleration may be a good idea.
 
 ```bash
-sudo swupd 3rd-party add clearfraction https://download.clearfraction.cf/update
+sudo swupd 3rd-party add clearfraction https://clearfraction.vercel.app/update
 sudo mkdir -p /etc/environment.d /etc/profile.d
 sudo tee -a /etc/environment.d/10-cf.conf << EOF
 PATH=/usr/bin/haswell:/usr/bin:/usr/local/bin:/opt/3rd-party/bundles/clearfraction/bin:/opt/3rd-party/bundles/clearfraction/usr/bin:/opt/3rd-party/bundles/clearfraction/usr/local/bin
@@ -112,7 +112,7 @@ The repository provides separate `codecs` and `codecs-cuda` bundles. Preferably,
 ### <a id="repair"></a>How to repair
 
 - `sudo swupd 3rd-party repair`
-- `sudo swupd 3rd-party remove clearfraction && sudo swupd 3rd-party add clearfraction https://download.clearfraction.cf/update`
+- `sudo swupd 3rd-party remove clearfraction && sudo swupd 3rd-party add clearfraction https://clearfraction.vercel.app/update`
 
 ### <a id="firefox"></a>Video playback in Firefox
 
