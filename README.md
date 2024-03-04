@@ -51,6 +51,7 @@
 
 - note 1: for old CPUs without AVX2 support use the `https://v2clearfraction.vercel.app/update`, you can fix it anytime in the swupd config `/opt/3rd-party/repo.ini`.
 - note 2: do not install `mpv` from Clear repository, strange things will happen. [Enabling](https://wiki.gentoo.org/wiki/Mpv#Broken_hardware_video_decoding.2Fhigh_CPU_usage) hardware acceleration may be a good idea.
+- note 3: the "bundle not found" error caused by the format bump - check this [issue](https://github.com/clearfraction/distribution/issues/45).
 
 ```bash
 sudo swupd 3rd-party add clearfraction https://clearfraction.vercel.app/update
