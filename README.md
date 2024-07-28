@@ -90,7 +90,7 @@ EOF
 Environment tuning needed for better system integration. Related: [swupd-client#1420](https://github.com/clearlinux/swupd-client/issues/1420), [swupd-client#1464](https://github.com/clearlinux/swupd-client/issues/1464), [swupd-client#1463](https://github.com/clearlinux/swupd-client/issues/1463), [swupd-client#1428](https://github.com/clearlinux/swupd-client/issues/1428), [swupd-client#1421](https://github.com/clearlinux/swupd-client/issues/1421).
 
 More guides:
-- [Wayrdoid](https://github.com/clearfraction/waydroid/blob/main/README.md)
+- [Waydroid](https://github.com/clearfraction/waydroid/blob/main/README.md)
 - [termfilechooser](https://github.com/clearfraction/xdg-desktop-portal-termfilechooser/blob/main/README.md)
 
 Optional steps:
