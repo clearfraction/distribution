@@ -17,7 +17,6 @@
 
 
 [![](https://img.shields.io/badge/donate-patreon-red)](https://patreon.com/clearfraction)
-[![](https://img.shields.io/badge/donate-buymeacoffee-yellow)](https://buymeacoffee.com/clearfraction)
 </div>
 
 
